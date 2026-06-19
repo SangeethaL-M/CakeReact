@@ -11,7 +11,7 @@ import Cart from './pages/Cart';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CakeReact">
       <Routes>
         <Route path="/" element={<Login />} />
        <Route path="/register" element={<Register />} />
