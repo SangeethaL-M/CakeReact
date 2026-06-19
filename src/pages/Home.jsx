@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 import img1 from '../assets/images/img1.jpg';
 import img2 from '../assets/images/img2.jpg';
 import img3 from '../assets/images/img3.jpg';
@@ -46,11 +47,11 @@ export default function App() {
 
         {/* Links */}
         <div className={`${menuOpen ? 'flex' : 'hidden'} md:flex absolute md:static top-20 left-0 w-full md:w-auto bg-white p-6 md:p-0 flex-col md:flex-row gap-6 shadow-lg md:shadow-none`}>
-          <a href="/" className="text-xl font-bold text-pink-500">Home</a>
-          <a href="/cakes" className="text-xl font-bold hover:text-pink-500">Cakes</a>
-          <a href="/pastries" className="text-xl font-bold hover:text-pink-500">Pastries</a>
-          <a href="/about" className="text-xl font-bold hover:text-pink-500">About Us</a>
-          <a href="/cart" className="text-xl font-bold hover:text-pink-500">Cart</a>
+          <Link to="/" className="text-xl font-bold text-pink-500">Home</Link>
+          <Link to="/cakes" className="text-xl font-bold hover:text-pink-500">Cakes</Link>
+          <Link to="/pastries" className="text-xl font-bold hover:text-pink-500">Pastries</Link>
+          <Link to="/about" className="text-xl font-bold hover:text-pink-500">About Us</Link>
+          <Link to="/cart" className="text-xl font-bold hover:text-pink-500">Cart</Link>
         </div>
       </nav>
 
